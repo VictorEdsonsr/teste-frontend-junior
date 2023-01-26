@@ -27,53 +27,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
 
     <title>Vision Motel</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <header class="position-relative h-50 d-flex flex-column ">
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <div class="container position-relative z-3">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" href="#">Início</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link " href="#">Suítes</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link " href="#">O Motel</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link " href="#">Cortesias</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Localização</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class=" border border-0 bg-white text-black px-3 py-2" type="submit">Reservas</button>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+        <article class="position-relative z-3 m-auto text-center">
+            <p>Bem vindo ao</p>
+            <h1 class="fs-1">Vison Motel</h1>
+            <div>
+                <button class=" border border-0 bg-black mx-2 px-5 py-2">Ver suítes</button>
+                <button class=" border border-0 bg-black mx-2 px-5 py-2">Reservas</button>
+            </div>
+        </article>
+
+
+        <div class="bg-image position-absolute top-0 bottom-0 start-0 end-0"></div>
+    </header>
+
 </body>
 
 </html>
