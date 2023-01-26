@@ -26,6 +26,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
+
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/global.css">
 
@@ -33,50 +37,53 @@
 </head>
 
 <body>
-    <header class="position-relative h-50 d-flex flex-column ">
-        <nav class="navbar navbar-expand-lg fixed-top ">
-            <div class="container position-relative z-3">
+    <header class="position-relative h-75 d-flex flex-column ">
+        <nav class="navbar navbar-expand-lg fixed-top bg-first-responsive-color ">
+            <div class="container position-relative z-3 d-flex justify-content-around">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" />
+                    <img src="./img/logo.svg" alt="logo do site" class="img-fluid" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <button class="navbar-toggler order-head-1 " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="bi bi-list fs-1"></i>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse order-head-1" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="#">Início</a>
+                        <li class="nav-item px-3 ">
+                            <a class="nav-link nav-text" href="#">Início</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link " href="#">Suítes</a>
+                            <a class="nav-link nav-text" href="#">Suítes</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link " href="#">O Motel</a>
+                            <a class="nav-link nav-text" href="#">O Motel</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link " href="#">Cortesias</a>
+                            <a class="nav-link nav-text" href="#">Cortesias</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Localização</a>
+                            <a class="nav-link nav-text" href="#">Localização</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link nav-text" href="#">Contato</a>
                         </li>
                     </ul>
                 </div>
-                <button class=" border border-0 bg-white text-black px-3 py-2" type="submit">Reservas</button>
+
+                <button class=" border border-0 px-3 py-2 order-head-2 bg-special">Reservas</button>
+
             </div>
         </nav>
 
-        <article class="position-relative z-3 m-auto text-center">
+        <article class="position-relative z-3 m-auto text-center article-head">
             <p>Bem vindo ao</p>
-            <h1 class="fs-1">Vison Motel</h1>
-            <div>
-                <button class=" border border-0 bg-black mx-2 px-5 py-2">Ver suítes</button>
-                <button class=" border border-0 bg-black mx-2 px-5 py-2">Reservas</button>
+            <h1>Vison Motel</h1>
+            <div class="h-100">
+                <button class=" border border-0 mx-2 px-md-5 px-3 py-2 bg-first-color">Ver suítes</button>
+                <button class=" border border-0 mx-2 px-md-5 px-3 py-2 bg-second-color">Reservas</button>
             </div>
         </article>
 
