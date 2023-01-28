@@ -1,0 +1,48 @@
+.bg-headerImage {
+    background-image: url("/img/slider-d.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+.bg-nav-color {
+    background-color: transparent;
+}
+
+#navbarSupportedContent .nav-link {
+    color: white !important;
+}
+
+#navbarSupportedContent .nav-link:hover {
+    color: rgb(37, 33, 33) !important;
+}
+
+.article-head h1 {
+    font-size: 67px;
+}
+
+.article-head p {
+    margin: -12px 0px;
+}
+
+
+@media(max-width:990px) {
+    #header .navbar-toggler {
+        order: 2;
+    }
+
+    #header .navbar-collapse {
+        order: 2;
+    }
+
+    #header .bg-navButton-responsive {
+        order: 1;
+    }
+
+    .bg-nav-color {
+        background-color: #2A2A2A;
+    }
+
+    .article-head h1 {
+        font-size: 53px;
+    }
+}

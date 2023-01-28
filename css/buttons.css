@@ -1,0 +1,36 @@
+.bg-navButton-first {
+    background-color: #7A7266;
+}
+
+.bg-navButton-first:hover {
+    background-color: #444039;
+    transition: all .2s ease-in-out;
+}
+
+.bg-navButton-secondary {
+    background-color: #5A493E;
+}
+
+.bg-navButton-secondary:hover {
+    background-color: #382d26;
+    transition: all .2s ease-in-out;
+}
+
+.bg-navButton-responsive {
+    color: black;
+    background-color: white;
+}
+
+.bg-navButton-responsive:hover {
+    background-color: #382d26;
+    transition: all .2s ease-in-out;
+    color: white;
+}
+
+@media(max-width:990px) {
+
+    .bg-navButton-responsive {
+        background-color: #5A493E;
+        color: white;
+    }
+}

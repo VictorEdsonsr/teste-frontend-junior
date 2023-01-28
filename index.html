@@ -37,59 +37,119 @@
 </head>
 
 <body>
-    <header class="position-relative h-75 d-flex flex-column ">
-        <nav class="navbar navbar-expand-lg fixed-top bg-first-responsive-color ">
+    <header class="position-relative h-75 d-flex flex-column" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-nav-color ">
             <div class="container position-relative z-3 d-flex justify-content-around">
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo.svg" alt="logo do site" class="img-fluid" />
                 </a>
-
-                <button class="navbar-toggler order-head-1 " type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list fs-1"></i>
                 </button>
-
-                <div class="collapse navbar-collapse order-head-1" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
                         <li class="nav-item px-3 ">
-                            <a class="nav-link nav-text" href="#">Início</a>
+                            <a class="nav-link" href="#">Início</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link nav-text" href="#">Suítes</a>
+                            <a class="nav-link" href="#">Suítes</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link nav-text" href="#">O Motel</a>
+                            <a class="nav-link" href="#">O Motel</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link nav-text" href="#">Cortesias</a>
+                            <a class="nav-link" href="#">Cortesias</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link nav-text" href="#">Localização</a>
+                            <a class="nav-link" href="#">Localização</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link nav-text" href="#">Contato</a>
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
                     </ul>
                 </div>
 
-                <button class=" border border-0 px-3 py-2 order-head-2 bg-special">Reservas</button>
+                <button class=" border border-0 px-3 py-2 bg-navButton-responsive">Reservas</button>
 
             </div>
         </nav>
-
         <article class="position-relative z-3 m-auto text-center article-head">
             <p>Bem vindo ao</p>
             <h1>Vison Motel</h1>
             <div class="h-100">
-                <button class=" border border-0 mx-2 px-md-5 px-3 py-2 bg-first-color">Ver suítes</button>
-                <button class=" border border-0 mx-2 px-md-5 px-3 py-2 bg-second-color">Reservas</button>
+                <button class=" border border-0 mx-2 px-md-5 px-3 py-2 bg-navButton-first">Ver suítes</button>
+                <button class=" border border-0 mx-2 px-md-5 px-3 py-2 bg-navButton-secondary">Reservas</button>
             </div>
         </article>
-
-
-        <div class="bg-image position-absolute top-0 bottom-0 start-0 end-0"></div>
+        <div class="bg-headerImage position-absolute top-0 bottom-0 start-0 end-0"></div>
     </header>
+
+    <main class="w-100">
+        <section
+            class="bg-mainPrimary-color  position-relative d-flex flex-column justify-content-center align-items-center ">
+
+            <h1>Nossas suítes</h1>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade w-50 m-auto ">
+                <div class="carousel-inner">
+                    <figure class="carousel-item active">
+                        <img src="./img/carrossel-1.jpg" class="d-block w-100" alt="...">
+                        <figcaption
+                            class="bg-white carousel-caption mt-6 d-flex flex-row w-50 m-auto p-3 justify-content-between">
+                            <article class="mr-3">
+                                <h4 class="text-black">Suíte Cristal</h4>
+                                <p class="text-black">A partir de R$ 164,00</p>
+                            </article>
+                            <button class="border border-0 bg-navButton-secondary">Saiba
+                                mais</button>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-mainSecondary-color w-100 container ">
+            <div class="row justify-content-center align-items-center">
+                <article class="bg-white col-12 col-md-6">
+                    <h1 class="text-black">O Motel</h1>
+                    <p class="text-black">O Vison Motel está localizado na Zona Industrial Norte, em Joinville e conta
+                        com
+                        ambientes exclusivos
+                        e privativos, basta escolher a suíte que mais combina com você.
+                    </p>
+                    <p class="text-black">Todos os quartos são equipados com TV, ar-condicionado, ducha, frigobar e
+                        garagem
+                        privativa, enquanto
+                        outras opções vão além: oferecem hidromassagem, pole dance, x sado e no caso da Suíte Erótika,
+                        até
+                        mesmo uma jaula ao redor da cama.</p>
+
+                    <p class="text-black"> Hospede-se e aproveite ainda nosso delicioso café da manhã, servido todos os
+                        dias
+                        para pernoites!
+                    </p>
+                </article>
+
+                <figure class="col-12 col-md-6">
+                    <img src="./img/o-motel-d.jpg" alt="O motel" class="img-fluid" />
+                </figure>
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 
