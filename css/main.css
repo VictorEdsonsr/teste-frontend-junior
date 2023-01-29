@@ -1,12 +1,109 @@
 .bg-mainPrimary-color {
     background-color: #7A7266;
+    padding: 80px 72px;
 }
 
 
+
+
+/*O MOTEL*/
+
 .bg-mainSecondary-color {
     background-color: #EEEEEE;
+    padding: 80px 72px;
 }
 
 .bg-transparent {
     background-color: transparent;
+}
+
+#itemsMotel div {
+    padding: 72px 32px !important;
+    min-width: 508px;
+    gap: 24px;
+}
+
+#articleMotel h1 {
+    font-size: 34px;
+    line-height: 45px;
+    margin-bottom: 1.5rem;
+}
+
+#articleMotel p {
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 1.5rem;
+}
+
+
+@media(max-width:990px) {
+
+
+    #itemsMotel div {
+        min-width: 312px;
+    }
+
+
+    .bg-mainSecondary-color {
+        background-color: #EEEEEE;
+        gap: 10px;
+        padding: 0;
+    }
+
+    #itemsMotel div {
+        order: 2;
+        margin-top: -50px !important;
+    }
+
+    #itemsMotel figure {
+        order: 1;
+    }
+}
+
+
+/*CARDS*/
+.bg-mainTerceary-color {
+    background-color: #7A7266;
+    padding: 64px 12px;
+}
+
+
+
+#rowCards figure {
+    background-color: #fff;
+    min-width: 368px;
+    height: 377px;
+    padding: 0;
+}
+
+#rowCards figcaption {
+    max-width: 304px;
+}
+
+#rowCards figure figcaption h5 {
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+
+#rowCards figure figcaption p {
+    font-size: 14px;
+    line-height: 160%;
+}
+
+@media(max-width:990px) {
+
+    #rowCards figcaption {
+        max-width: 248px;
+    }
+
+    #rowCards figure {
+        min-width: 268px;
+    }
+}
+
+/*LOCAL*/
+.bg-mainQuaternary-color {
+    background-color: #EEEEEE;
+    padding: 80px 72px;
 }
