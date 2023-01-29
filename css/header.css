@@ -26,6 +26,10 @@
 
 
 @media(max-width:990px) {
+    #header {
+        height: 100% !important;
+    }
+
     #header .navbar-toggler {
         order: 2;
     }
@@ -44,5 +48,15 @@
 
     .article-head h1 {
         font-size: 53px;
+    }
+
+
+    /*FIXED*/
+    .fixed-bottomCustomize {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
     }
 }

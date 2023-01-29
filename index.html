@@ -38,7 +38,7 @@
 
 <body>
     <header class="position-relative h-75 d-flex flex-column" id="header">
-        <nav class="navbar navbar-expand-lg fixed-top bg-nav-color ">
+        <nav class="navbar navbar-expand-lg fixed-bottomCustomize  bg-nav-color ">
             <div class="container position-relative z-3 d-flex justify-content-around">
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo.svg" alt="logo do site" class="img-fluid" />
@@ -210,15 +210,19 @@
         <section id="sectionLocal" class="bg-mainQuaternary-color">
             <div class="container">
                 <div class="row bg-white shadow">
-                    <div class="col-12 col-md-6 justify-content-center align-items-center">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15875.759323768436!2d-35.215377!3d-5.8640839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff5baaaaaaab%3A0x4e473882f4872dac!2sVison%20Motel!5e0!3m2!1spt-BR!2sbr!4v1674953895978!5m2!1spt-BR!2sbr"
-                            width="500" height="290" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-12 col-md-6 justify-content-center align-items-center p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15875.759323768436!2d-35.215377!3d-5.8640839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff5baaaaaaab%3A0x4e473882f4872dac!2sVison%20Motel!5e0!3m2!1spt-BR!2sbr!4v1674953895978!5m2!1spt-BR!2sbr"
+                                width="500" height="290" allowfullscreen loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
                     </div>
-                    <article class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <article id="articleLocal"
+                        class=" col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <h1 class="text-black">Localização</h1>
-                        <p class="text-black">Avenida Santos Dumont, 5253
+                        <p class="text-black text-center">Avenida Santos Dumont, 5253 <br />
                             Zona Industrial Norte - Joinville - SC</p>
                         <button class="border border-0 px-3 py-2 bg-navButton-secondary">Traçar rota</button>
                     </article>
@@ -226,6 +230,41 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <section class="bg-primaryFooter-color">
+            <div class="container">
+                <div class="row gap-2">
+                    <figure class="col-12 col-md-3">
+                        <img src="./img/logo.svg" alt="logo do Footer">
+                        <address class="d-none d-md-block">Rua SPMS, Conj./Lote 175/225 - Núcleo Bandeirante -
+                            Brasília - DF
+                        </address>
+                    </figure>
+
+                    <ul class="col-2 d-none d-md-block">
+                        <li>Início</li>
+                        <li>Suítes</li>
+                        <li>O Motel</li>
+                    </ul>
+
+                    <ul class="col-2 d-none d-md-block">
+                        <li>Gastronomia</li>
+                        <li>Localização</li>
+                        <li>Reservas</li>
+                    </ul>
+
+                    <article class="col-3 d-none d-md-block">
+                        <span>Whatsapp: </br></span> <a href="tel:+550613552-2297">(061) 3552-2297</a></br>
+                        <span>E-mail:</br></span><a href="mailto:contato@motelvison.com">contato@motelvison.com</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black h-25">
+            <span class="uppercase">guia de motéis sites │ guia de motéis © </span>
+        </section>
+    </footer>
 
 </body>
 

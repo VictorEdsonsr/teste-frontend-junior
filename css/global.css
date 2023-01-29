@@ -1,7 +1,8 @@
 /*IMPORTS*/
 @import url("./header.css");
 @import url("./buttons.css");
-@import url("/css//main.css");
+@import url("./main.css");
+@import url("./footer.css");
 
 * {
     margin: 0;
