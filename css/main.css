@@ -1,6 +1,31 @@
+/*SLIDER*/
+
 .bg-mainPrimary-color {
     background-color: #7A7266;
-    padding: 80px 72px;
+    padding: 80px 72px !important;
+}
+
+#slider-figures figure img {
+    height: 440px;
+    min-width: 712px;
+
+}
+
+#slider-figures figure div {
+    position: absolute;
+    top: 346px;
+    z-index: 100;
+}
+
+@media(max-width:990px) {
+    .bg-mainPrimary-color {
+        background-color: #7A7266;
+        padding: 64px 24px !important;
+    }
+
+    #slider-figures figure img {
+        min-width: 312px;
+    }
 }
 
 
@@ -69,7 +94,7 @@
 #rowCards figure {
     background-color: #fff;
     min-width: 368px;
-    height: 377px;
+    min-height: 377px;
     padding: 0;
 }
 

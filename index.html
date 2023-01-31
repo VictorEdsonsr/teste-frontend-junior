@@ -90,34 +90,35 @@
         <section id="sectionSlider"
             class="bg-mainPrimary-color  d-flex flex-column justify-content-center align-items-center ">
 
-            <h1>Nossas suítes</h1>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade  m-auto ">
-                <div class="carousel-inner">
-                    <figure class="carousel-item active">
-                        <img src="./img/carrossel-1.jpg" class="d-block w-100" alt="...">
-                        <figcaption
-                            class="bg-white carousel-caption top-30 mt-6 d-flex flex-row w-50 m-auto p-3 justify-content-between">
-                            <article class="mr-3">
-                                <h4 class="text-black">Suíte Cristal</h4>
-                                <p class="text-black">A partir de R$ 164,00</p>
-                            </article>
-                            <button class="border border-0 bg-navButton-secondary">Saiba
-                                mais</button>
-                        </figcaption>
+            <h1 class="mb-3">Nossas suítes</h1>
+            <div id="carouselExample" class="carousel slide">
+                <div id="slider-figures" class="carousel-inner">
+
+                    <figure class="carousel-item active ">
+                        <img src="./img/slider-1.jpg" class="d-block  img-fluid" alt="...">
                     </figure>
 
+
+                    <figure class="carousel-item">
+                        <img src="./img/slider-2.jpg" class="d-block  img-fluid" alt="...">
+                    </figure>
+                    <figure class="carousel-item">
+                        <img src="./img/slider-3.jpg" class="d-block  img-fluid" alt="...">
+                    </figure>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev bg-white slider-button m-auto" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left text-black fs-2" aria-hidden="true"></i>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next bg-white slider-button m-auto" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="next">
+                    <i class="bi bi-chevron-right text-black fs-2" aria-hidden="true"></i>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+            <a href="#" class="text-white">Ver todas as suítes</a>
         </section>
 
         <section id="sectionMotel"
@@ -125,7 +126,7 @@
             <div class="container">
                 <div id="itemsMotel" class="row justify-content-center align-items-center">
                     <div
-                        class="p-0 mt-lg-5 mt-0 mb-5 mb-lg-0 shadow bg-white col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                        class="p-0 mt-lg-5 mt-0 mb-5 mb-lg-0 shadow bg-white col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
                         <article id="articleMotel">
                             <h1 class="mb-7 text-black">O Motel</h1>
                             <p class="text-black">O Vison Motel está localizado na Zona Industrial Norte, em Joinville e
@@ -155,8 +156,9 @@
                         </article>
 
                     </div>
-                    <figure class="p-0 col-12 col-lg-6 mb-lg-5 mb-0">
-                        <img src="./img/o-motel-d.jpg" alt="O motel" class="img-fluid" />
+                    <figure
+                        class="p-0 mb-lg-5 mt-0 mb-5 mb-lg-0 shadow bg-white col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                        <img src="./img/o-motel-d.jpg" alt="O motel" class="img-fluid w-100" />
                     </figure>
                 </div>
 
