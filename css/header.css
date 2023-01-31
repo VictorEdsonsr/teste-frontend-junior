@@ -1,5 +1,5 @@
 .bg-headerImage {
-    background-image: url("/img/header-slider.jpg");
+    background-image: url("../img/header-slider.jpg");
     height: 100%;
     background-size: cover;
 }
