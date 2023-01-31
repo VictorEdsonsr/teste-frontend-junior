@@ -1,3 +1,9 @@
+.bg-main-color {
+    background-color: #EEEEEE;
+}
+
+
+
 /*SLIDER*/
 
 .bg-mainPrimary-color {
@@ -11,13 +17,25 @@
 
 }
 
-#slider-figures figure div {
-    position: absolute;
-    top: 346px;
-    z-index: 100;
+#slider-figures figure figcaption {
+    top: 386px;
+    margin: 0 auto;
+    transform: translateY(-40%);
+    max-width: 376px;
+    padding: 32px;
+}
+
+#carouselExample button {
+    bottom: 175px;
 }
 
 @media(max-width:990px) {
+
+    #slider-figures figure figcaption {
+        max-width: 280px;
+
+    }
+
     .bg-mainPrimary-color {
         background-color: #7A7266;
         padding: 64px 24px !important;
@@ -39,9 +57,9 @@
     background-color: transparent;
 }
 
-#itemsMotel div {
+#itemsMotel figcaption {
     padding: 72px 32px !important;
-    min-width: 508px;
+    max-width: 544px;
     gap: 24px;
 }
 
@@ -58,27 +76,41 @@
 }
 
 
-@media(max-width:990px) {
+@media(max-width:550px) {
 
-
-    #itemsMotel div {
-        min-width: 312px;
+    #sectionMotel div {
+        padding: 0 !important;
     }
 
+    #itemsMotel figcaption {
+        max-width: 300px;
+        position: absolute;
+        top: 270px;
+    }
+
+    #sectionCards {
+        top: 670px;
+    }
+
+    #sectionLocal {
+        top: 670px;
+    }
+
+    #footer {
+        top: 670px;
+    }
 
     .bg-mainSecondary-color {
         background-color: #EEEEEE;
         gap: 10px;
         padding: 0;
     }
+}
 
-    #itemsMotel div {
-        order: 2;
-        margin-top: -50px !important;
-    }
+@media(max-width:990px) {
 
-    #itemsMotel figure {
-        order: 1;
+    #itemsMotel {
+        flex-direction: column !important;
     }
 }
 

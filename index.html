@@ -51,22 +51,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
                         <li class="nav-item px-3 ">
-                            <a class="nav-link" href="#">Início</a>
+                            <a class="nav-link" href="#header">Início</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Suítes</a>
+                            <a class="nav-link" href="#sectionSlider">Suítes</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">O Motel</a>
+                            <a class="nav-link" href="#sectionMotel">O Motel</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Cortesias</a>
+                            <a class="nav-link" href="#sectionCards">Cortesias</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Localização</a>
+                            <a class="nav-link" href="#sectionLocal">Localização</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#footer">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -86,24 +86,55 @@
         <div class="bg-headerImage position-absolute top-0 bottom-0 start-0 end-0"></div>
     </header>
 
-    <main>
+    <main class="bg-main-color">
         <section id="sectionSlider"
-            class="bg-mainPrimary-color  d-flex flex-column justify-content-center align-items-center ">
+            class="bg-mainPrimary-color position-relative d-flex flex-column justify-content-center align-items-center ">
 
             <h1 class="mb-3">Nossas suítes</h1>
             <div id="carouselExample" class="carousel slide">
-                <div id="slider-figures" class="carousel-inner">
+                <div id="slider-figures" class="carousel-inner ">
 
-                    <figure class="carousel-item active ">
-                        <img src="./img/slider-1.jpg" class="d-block  img-fluid" alt="...">
+                    <figure class="carousel-item active  ">
+                        <img src="./img/slider-1.jpg" class="d-block  img-fluid" alt="slider 1">
+
+                        <figcaption
+                            class="bg-white shadow d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                            <article>
+                                <h1 class="text-black fs-2">Suíte Cristal</h1>
+                                <p class="text-black">A partir de R$ 164,00</p>
+                            </article>
+                            <button class="border border-0 px-3 py-2 bg-navButton-secondary">Saiba
+                                mais</button>
+                        </figcaption>
                     </figure>
 
 
                     <figure class="carousel-item">
-                        <img src="./img/slider-2.jpg" class="d-block  img-fluid" alt="...">
+                        <img src="./img/slider-2.jpg" class="d-block  img-fluid" alt="slider 2">
+
+                        <figcaption
+                            class="bg-white shadow d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                            <article>
+                                <h1 class="text-black fs-2">Suíte Diamante</h1>
+                                <p class="text-black">A partir de R$ 179,00</p>
+                            </article>
+                            <button class="border border-0 px-3 py-2 bg-navButton-secondary">Saiba
+                                mais</button>
+                        </figcaption>
+
                     </figure>
                     <figure class="carousel-item">
-                        <img src="./img/slider-3.jpg" class="d-block  img-fluid" alt="...">
+                        <img src="./img/slider-3.jpg" class="d-block  img-fluid" alt="slider 3">
+
+                        <figcaption
+                            class="bg-white shadow d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                            <article>
+                                <h1 class="text-black fs-2">Suíte Esmeralda</h1>
+                                <p class="text-black">A partir de R$ 200,00</p>
+                            </article>
+                            <button class="border border-0 px-3 py-2 bg-navButton-secondary">Saiba
+                                mais</button>
+                        </figcaption>
                     </figure>
                 </div>
                 <button class="carousel-control-prev bg-white slider-button m-auto" type="button"
@@ -122,51 +153,36 @@
         </section>
 
         <section id="sectionMotel"
-            class="bg-mainSecondary-color d-flex flex-column justify-content-center  align-items-center">
+            class="bg-mainSecondary-color position-relative d-flex flex-column justify-content-center  align-items-center">
             <div class="container">
-                <div id="itemsMotel" class="row justify-content-center align-items-center">
-                    <div
-                        class="p-0 mt-lg-5 mt-0 mb-5 mb-lg-0 shadow bg-white col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                <figure id="itemsMotel"
+                    class="position-relative p-0 mb-lg-5 mt-0 mb-5 mb-lg-0 d-flex flex-lg-row flex-column justify-content-center align-items-center">
+                    <figcaption class="p-0 mt-lg-5 mt-0 mb-5 mb-lg-0 shadow bg-white">
                         <article id="articleMotel">
                             <h1 class="mb-7 text-black">O Motel</h1>
-                            <p class="text-black">O Vison Motel está localizado na Zona Industrial Norte, em Joinville e
-                                conta
-                                com
-                                ambientes exclusivos
-                                e privativos, basta escolher a suíte que mais combina com você.
+                            <p class="text-black">O Vison Motel está localizado na Zona Industrial Norte, em
+                                Joinville e conta com ambientes exclusivos e privativos, basta escolher a suíte que
+                                mais combina com você.
                             </p>
                             <p class="text-black">Todos os quartos são equipados com TV, ar-condicionado, ducha,
-                                frigobar e
-                                garagem
-                                privativa, enquanto
-                                outras opções vão além: oferecem hidromassagem, pole dance, x sado e no caso da Suíte
-                                Erótika,
-                                até
-                                mesmo uma jaula ao redor da cama.</p>
-
-                            <p class="text-black"> Hospede-se e aproveite ainda nosso delicioso café da manhã, servido
-                                todos
-                                os
-                                dias
-                                para pernoites!
+                                frigobar e garagem privativa, enquanto outras opções vão além: oferecem
+                                hidromassagem, pole dance, x sado e no caso da
+                                Suíte Erótika, até mesmo uma jaula ao redor da cama.</p>
+                            <p class="text-black"> Hospede-se e aproveite ainda nosso delicioso café da manhã,
+                                servido todos os dias para pernoites!
                             </p>
 
                             <button class="border border-0 px-3 py-2 bg-navButton-secondary">Saiba
                                 mais</button>
                         </article>
+                    </figcaption>
 
-                    </div>
-                    <figure
-                        class="p-0 mb-lg-5 mt-0 mb-5 mb-lg-0 shadow bg-white col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                        <img src="./img/o-motel-d.jpg" alt="O motel" class="img-fluid w-100" />
-                    </figure>
-                </div>
-
+                    <img src="./img/o-motel-d.jpg" alt="O motel" class="img-fluid w-100" />
+                </figure>
             </div>
-
         </section>
 
-        <section id="sectionCards" class="bg-mainTerceary-color">
+        <section id="sectionCards" class="position-relative bg-mainTerceary-color">
             <div class="container d-flex flex-column align-items-center justify-content-center">
                 <h1 class="mb-4">Cortesias</h1>
                 <div id="rowCards" class="row mb-4 align-items-center justify-content-center gap-2">
@@ -209,7 +225,7 @@
             </div>
         </section>
 
-        <section id="sectionLocal" class="bg-mainQuaternary-color">
+        <section id="sectionLocal" class="position-relative bg-mainQuaternary-color">
             <div class="container">
                 <div class="row bg-white shadow">
                     <div class="col-12 col-md-6 justify-content-center align-items-center p-0">
@@ -233,7 +249,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer" class="position-relative">
         <section class="bg-primaryFooter-color">
             <div class="container justify-content-center align-items-center">
                 <div class="row gap-0 gap-md-4 justify-content-start align-items-center">
